@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {API_KEY} from "../../config.js";
 
 const SolarCalculator = () => {
     const [latitude, setLatitude] = useState('');
@@ -6,7 +7,7 @@ const SolarCalculator = () => {
     const [energyOutput, setEnergyOutput] = useState(null);
     const [error, setError] = useState('');
 
-    const apiKey = 'hNhao1nrX5lnXb0e92masBDR5c1ekzRvoeQufwGf'; // Replace with your NREL API Key
+    const apiKey = API_KEY; // Replace with your NREL API Key
 
     const calculateSolarPotential = async () => {
         if (!latitude || !longitude) {
