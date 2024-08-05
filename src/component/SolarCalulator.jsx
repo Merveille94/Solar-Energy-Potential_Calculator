@@ -6,7 +6,7 @@ const SolarCalculator = () => {
     const [energyOutput, setEnergyOutput] = useState(null);
     const [error, setError] = useState('');
 
-    const apiKey = 'hNhao1nrX5lnXb0e92masBDR5c1ekzRvoeQufwGf'; // Ensure this is correctly set
+    const apiKey = 'hNhao1nrX5lnXb0e92masBDR5c1ekzRvoeQufwGf'; // Replace with your NREL API Key
 
     const calculateSolarPotential = async () => {
         if (!latitude || !longitude) {
@@ -24,12 +24,24 @@ const SolarCalculator = () => {
             }
 
             const data = await response.json();
-            const averageSolarRadiation = data.outputs.avg_dni.annual;
+            console.log(data); // Log the entire response for debugging
 
-            setEnergyOutput(averageSolarRadiation);
-            setError('');
+            // Accessing annual solar radiation
+            const averageDNI = data.outputs.avg_dni.annual; // Direct Normal Irradiance
+            const averageGHI = data.outputs.avg_ghi.annual; // Global Horizontal Irradiance
+
+            if (averageDNI !== undefined) {
+                setEnergyOutput({
+                    dni: averageDNI,
+                    ghi: averageGHI,
+                });
+                setError('');
+            } else {
+                throw new Error('Data not available for the specified location.');
+            }
         } catch (err) {
             setError(err.message);
+            console.error(err); // Log the error for debugging
         }
     };
 
@@ -71,9 +83,14 @@ const SolarCalculator = () => {
                 )}
 
                 {energyOutput && (
-                    <p className="mt-4 text-green-500 text-center">
-                        Estimated Annual Solar Radiation: {energyOutput.toFixed(2)} kWh/m²
-                    </p>
+                    <div className="mt-4 text-green-500 text-center">
+                        <p>
+                            Estimated Annual DNI: {energyOutput.dni.toFixed(2)} kWh/m²
+                        </p>
+                        <p>
+                            Estimated Annual GHI: {energyOutput.ghi.toFixed(2)} kWh/m²
+                        </p>
+                    </div>
                 )}
             </div>
         </div>
