@@ -6,7 +6,7 @@ const SolarCalculator = () => {
     const [energyOutput, setEnergyOutput] = useState(null);
     const [error, setError] = useState('');
 
-    const apiKey = 'hNhao1nrX5lnXb0e92masBDR5c1ekzRvoeQufwGf'; // Replace with your NREL API Key
+    const apiKey = 'hNhao1nrX5lnXb0e92masBDR5c1ekzRvoeQufwGf'; // Ensure this is correctly set
 
     const calculateSolarPotential = async () => {
         if (!latitude || !longitude) {
