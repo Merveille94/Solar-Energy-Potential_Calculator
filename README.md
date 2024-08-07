@@ -1,6 +1,6 @@
 # Solar Energy Potential Calculator
 
-This is a web application that estimates the potential solar energy production for a given location. The application uses the NREL Solar Data API to retrieve real-time solar radiation data, allowing users to understand the solar potential of their specific geographic area.
+This is a web application that estimates the potential solar energy production for a given location. The application uses the NREL (National Renewable Energy Laboratory) Solar Data API to retrieve real-time solar radiation data, allowing users to understand the solar potential of their specific geographic area.
 
 ## Table of Contents
 
