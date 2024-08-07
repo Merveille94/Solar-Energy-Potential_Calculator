@@ -99,3 +99,5 @@ const SolarCalculator = () => {
 };
 
 export default SolarCalculator;
+
+// done
