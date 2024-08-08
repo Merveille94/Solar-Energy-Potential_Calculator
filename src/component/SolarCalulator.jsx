@@ -84,12 +84,13 @@ const SolarCalculator = () => {
                 )}
 
                 {energyOutput && (
-                    <div className="mt-4 text-green-500 text-center">
+                    <div className="mt-4 text-green-700 text-center">
                         <p>
-                            Estimated Annual DNI: {energyOutput.dni.toFixed(2)} kWh/m²
+                            Estimated Annual (Direct Normal Irradiance)<br/> DNI: {energyOutput.dni.toFixed(2)} kWh/m²
                         </p>
+                        <br/>
                         <p>
-                            Estimated Annual GHI: {energyOutput.ghi.toFixed(2)} kWh/m²
+                            Estimated Annual (Global Horizontal Irradiance)<br/> GHI: {energyOutput.ghi.toFixed(2)} kWh/m²
                         </p>
                     </div>
                 )}
