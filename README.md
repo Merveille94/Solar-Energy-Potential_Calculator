@@ -17,6 +17,12 @@ This is a web application that estimates the potential solar energy production f
 
 The Solar Energy Potential Calculator is designed to help individuals and businesses estimate the amount of solar energy they can potentially harness at a given location. By inputting the latitude and longitude, users receive an estimate of annual solar radiation in kilowatt-hours per square meter (kWh/m²).
 
+## 🌍 Why This Matters
+
+As we strive towards a sustainable future, understanding solar energy potential is crucial
+for optimizing renewable energy use. This tool can assist researchers, developers, and anyone
+interested in exploring solar energy possibilities, making it easier to plan for energy-efficient solutions.
+
 ## Features
 
 - **Real-Time Solar Data**: Integrates with the NREL Solar Data API for accurate and up-to-date solar radiation information.
@@ -42,11 +48,7 @@ The Solar Energy Potential Calculator is designed to help individuals and busine
    npm install
    ```
 
-3. **Configure Environment**
-
-   Replace `YOUR_NREL_API_KEY` in `SolarCalculator.js` with your NREL API key obtained from the [NREL Developer Network](https://developer.nrel.gov/signup/).
-
-4. **Run the Application**
+3. **Run the Application**
 
    Start the development server:
 
@@ -54,13 +56,14 @@ The Solar Energy Potential Calculator is designed to help individuals and busine
    npm start
    ```
 
-   The application should now be running at `http://localhost:3000`.
+   The application should now be running at `http://localhost:5174`.
 
 ## Usage
 
-1. **Enter Location Details**: Input the latitude and longitude of the location you want to analyze.
+1. **Enter Location Details**: Input the NREL API KEY, latitude and longitude of the location you want to analyze.
 2. **Calculate Solar Potential**: Click the "Calculate" button to receive an estimate of the annual solar radiation.
 3. **View Results**: The estimated solar energy potential will be displayed, providing insight into the feasibility of solar energy production at that location.
+
 
 ## Requirements
 
