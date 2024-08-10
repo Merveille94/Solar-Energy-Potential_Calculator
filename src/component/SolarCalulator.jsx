@@ -121,7 +121,7 @@ const SolarCalculator = () => {
                         area by a horizontal surface.</p>
                     <br/>
                     <Marquee>
-                          Returns only various types of solar data for US locations for now. will be working on an update soon!!!
+                        Returns only various types of solar data for US locations for now. will be working on an update soon!!!....
                     </Marquee>
                 </div>
             </div>
