@@ -120,7 +120,7 @@ const SolarCalculator = () => {
                     <p><strong>GHI:</strong> Global Horizontal Irradiance is the total solar radiation received per unit
                         area by a horizontal surface.</p>
                     <br/>
-                    <Marquee>
+                    <Marquee className='text-blue-500'>
                         Returns only various types of solar data for US locations for now. will be working on an update soon!!!....
                     </Marquee>
                 </div>
