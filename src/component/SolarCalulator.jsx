@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Marquee from "react-fast-marquee";
 
 const SolarCalculator = () => {
     const [latitude, setLatitude] = useState('');
@@ -118,6 +119,10 @@ const SolarCalculator = () => {
                         surface that is always held perpendicular to the rays coming from the sun.</p>
                     <p><strong>GHI:</strong> Global Horizontal Irradiance is the total solar radiation received per unit
                         area by a horizontal surface.</p>
+                    <br/>
+                    <Marquee>
+                          Returns only various types of solar data for US locations for now. will be working on an update soon!!!
+                    </Marquee>
                 </div>
             </div>
         </div>
