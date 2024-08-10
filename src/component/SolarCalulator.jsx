@@ -122,7 +122,12 @@ const SolarCalculator = () => {
                     <br/>
                     <Marquee className='text-blue-500'>
                         Returns only various types of solar data for US locations for now. will be working on an update soon!!!....
-                    </Marquee>
+                    </Marquee><br/>
+                    <p className='text-xs'>
+                        Example: New York City, USA<br/>
+                        Latitude: 40.7128
+                        Longitude: -74.0060
+                    </p>
                 </div>
             </div>
         </div>
