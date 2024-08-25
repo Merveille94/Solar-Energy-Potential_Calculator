@@ -75,7 +75,7 @@ interested in exploring solar energy possibilities, making it easier to plan for
 
 This project was initially conceptualized in December 2023 as a C++ application. The web application development began in April 2024 and it's still underway using React and Tailwind CSS to provide a more interactive and accessible interface.
 
-## Future Updates
+## Future Update
 
 Planned future updates include:
 - **Enhanced Data Visualization**: Add charts and graphs to better visualize solar potential over time.
